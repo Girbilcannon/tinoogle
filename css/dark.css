@@ -1,0 +1,159 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #202125;
+}
+
+#main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 20rem;
+    padding-bottom: 1.5rem;
+}
+
+#mrt_main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mrt {
+    border-radius: 20px;
+}
+
+#mrt_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    text-decoration:none;
+    color: #fff
+}
+
+#search-input {
+    width: 30%;
+    line-height: 2rem;
+    border-radius: 2rem;
+    padding: 0 10px;
+    border: 1px solid #555;
+    background: none;
+    color: #fff;
+}
+
+.button-row {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.fancy-button {
+    background: #303135;
+    border: none;
+    margin: 1.1rem 0.4rem 0.9rem 0.4rem;
+    padding: 0.6rem;
+    border-radius: 6px;
+    transition-duration: 0.2s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fancy-button:hover {
+    background: rgb(53, 114, 194);
+}
+
+.nav-bar-group{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar{
+    position: fixed;    
+    width:100%;
+    line-height: 3rem;
+    height: 3rem;
+    box-sizing: border-box;
+}
+
+.nav-button-el{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    background: #202125;
+    color: #fff;
+    left: 0;
+    top: 0;
+}
+
+footer {
+    background: #171717;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+}
+
+.boring-button {
+    height:100%;
+    transition-duration: .2s;
+    cursor: pointer;
+    padding: 0rem 0.8rem 0rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    text-decoration:none;
+    color: #fff
+}
+
+#hamberber {
+    display: none;
+}
+
+nav .boring-button:hover{
+    background: rgb(53, 114, 194);
+}
+footer .boring-button:hover{
+    background: rgb(53, 114, 194);
+}
+
+@media only screen and (max-width: 600px) {
+    #search-input {
+        width: 90%;
+        line-height: 2rem;
+        border-radius: 2rem;
+        padding: 0 10px;
+        border: 1px solid #555;
+        background: none;
+        color: #fff;
+    }
+
+    .button-row{
+        width: 90%;
+    }
+
+    .nav-button-el, footer{
+        display:none;
+    }
+
+    #hamberber{
+        display: block;
+        height: 3em;
+        line-height: 3rem;
+        transition-duration: .2s;
+    }
+
+    #hamberber:hover{
+        filter:brightness(2);
+    }
+}
