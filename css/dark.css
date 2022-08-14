@@ -68,9 +68,18 @@ body {
     background: rgb(53, 114, 194);
 }
 
-.nav-bar-group{
+.nav-bar-group {
     display: flex;
     justify-content: space-around;
+}
+
+.nav-bar-group_mid p {
+    display: flex;
+    justify-content: space-around;
+    font-size: .6rem;
+    color: #888;
+    margin-top: -4px;
+    line-height: 12px;
 }
 
 .nav-bar{
